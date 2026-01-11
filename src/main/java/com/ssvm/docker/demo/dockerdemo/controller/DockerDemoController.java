@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class DockerDemoController {
 
 
-        private final DockerRepo repository;
+       /* private final DockerRepo repository;
 
         public DockerDemoController(DockerRepo repository) {
             this.repository = repository;
@@ -30,7 +30,7 @@ public class DockerDemoController {
                     System.out.println("NOT FOUND for id=" + id);
                     return ResponseEntity.notFound().build();
                 });
-    }
+    }*/
 
     @GetMapping("/message")
     public String message(){
