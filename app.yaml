@@ -4,3 +4,6 @@ service: default
 
 env_variables:
   SPRING_PROFILES_ACTIVE: prod
+
+beta_settings:
+  cloud_sql_instances: springboot-gcp-demo-484016:asia-south1:my-mysql
