@@ -1,6 +1,8 @@
 spring:
   datasource:
-    url: ${SPRING_DATASOURCE_URL:jdbc:mysql://mysql:3306/ssvm}
+    url: ${SPRING_DATASOURCE_URL:jdbc:mysql:///ssvm \
+?cloudSqlInstance=springboot-gcp-demo-484016:asia-south1:my-mysql \
+&socketFactory=com.google.cloud.sql.mysql.SocketFactory}
     username: ${SPRING_DATASOURCE_USERNAME:appuser}
     password: ${SPRING_DATASOURCE_PASSWORD:Rockstar@45}
 
